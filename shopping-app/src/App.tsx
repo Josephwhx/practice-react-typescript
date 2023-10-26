@@ -10,8 +10,8 @@ import './App.css';
 function App() {
   const [items, setItems] = useState<Item[]>([])
 
-  const addItem = (product: string) => {
-    setItems([...items, {id: getId(), product, quantity: 1}]);
+  const addItem = (product: string, quantity: number) => {
+    setItems([...items, {id: getId(), product, quantity}]);
   }
 
   // const items = [
