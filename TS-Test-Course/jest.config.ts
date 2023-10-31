@@ -1,7 +1,7 @@
 import type { Config } from '@jest/types'
 
-const baseDir = '<rootDir>/src/app/pass_checker';   // To change configuration of test coverage location
-const baseTestDir = '<rootDir>/src/test/pass_checker';  // To change configuration of test location
+const baseDir = '<rootDir>/src/app/doubles';   // To change configuration of test coverage location ** not fixed **
+const baseTestDir = '<rootDir>/src/test/doubles';  // To change configuration of test location ** not fixed  **
 
 const config: Config.InitialOptions = {
     preset: 'ts-jest',
