@@ -1,8 +1,18 @@
-import { calculateComplexity } from "../../app/doubles/OtherUtils";
+import { calculateComplexity, toUpperCaseWithCb } from "../../app/doubles/OtherUtils";
 
 
 describe('OtherUtils test suite', () => {
 
+    it('ToUpperCase - calls callback for invalid arguments', () => {
+        const actual = toUpperCaseWithCb('', () => {});
+        expect(actual).toBeUndefined;
+    });
+
+    it('ToUpperCase - calls callback for valid arguments', () => {
+        const actual = toUpperCaseWithCb('abc', () => {});
+        expect(actual).toBe('ABC');
+    });
+    
     it('Calculates complexity', () => {
         const someInfo = {
             length: 5,
