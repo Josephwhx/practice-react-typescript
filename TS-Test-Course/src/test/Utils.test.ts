@@ -16,9 +16,9 @@ describe('Utils test suite', () => {
         });
 
         it('Should return correct uppercase', () => {
-            const acutal = sut.toUpperCase('abc');
+            const actual = sut.toUpperCase('abc');
 
-            expect(acutal).toBe('ABC');
+            expect(actual).toBe('ABC');
         });
 
         it('Should throw error on invalid argument - function', () => {

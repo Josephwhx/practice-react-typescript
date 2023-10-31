@@ -66,9 +66,9 @@ describe('DataBase test suite', () => {
         await sut.update(id, 'color', expectedColor);
 
         const object = await sut.getBy('id', id);
-        const acutalColor = object.color;
+        const actualColor = object.color;
 
-        expect(acutalColor).toBe(expectedColor);
+        expect(actualColor).toBe(expectedColor);
     });
 
     it('should delete object', async () => {
